@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易绘图板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <span id="brush">画笔</span>
+    <span>|</span>
+    <span id="line">直线</span>
+    <span id="circle">圆形</span>
+    <span id="rect">矩形</span>
+    <span>|</span>
+    <span id="text">写字</span>
+    <span>|</span>
+    <span id="fileText">添加图片<input type="file" id="file" accept="image/*"/></span>
+    <div id="inlineDiv">
+        <span id="horizontal_rotate">水平翻转</span>
+        <span id="vertical_rotate">垂直翻转</span>
+        <span>|</span>
+        <span id="clear">清除</span>
+        <span>|</span>
+        <span id="colorText">颜色<input type="color" id="color"></span>
+        <span>|</span>
+        <span id="save">保存</span>
+    </div>
+</header>
+<main>
+    <canvas id="cacheCanvas" ></canvas>
+    <canvas id="realCanvas">
+        <p>你的浏览器不支持Canvas</p>
+    </canvas>
+</main>
+<script src="print.js"></script>
+</body>
+</html>
